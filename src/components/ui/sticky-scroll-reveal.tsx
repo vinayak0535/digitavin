@@ -69,7 +69,7 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="h-[40rem] overflow-y-auto flex justify-center align-middle relative gap-10 rounded-2xl p-10 scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent bg-background"
+      className="h-[36rem] overflow-y-auto flex justify-center relative gap-10 rounded-2xl p-10 scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent bg-background"
       ref={ref}
     >
       <div className="relative flex items-start px-4">
@@ -102,7 +102,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "block lg:sticky h-56 w-full sm:h-64 md:h-80 lg:h-[420px] xl:h-[520px] overflow-hidden rounded-2xl ",
+          "hidden lg:block h-[420px] w-[520px] xl:h-[520px] xl:w-[600px] rounded-2xl sticky top-10 overflow-hidden border border-border/50 shadow-2xl",
           contentClassName
         )}
       >
@@ -115,7 +115,7 @@ export const StickyScroll = ({
             ease: [0.22, 1, 0.36, 1],
             opacity: { duration: 0.5 }
           }}
-          className="h-full w-full object cover"
+          className="h-full w-full"
         >
           {content[activeCard].content ?? null}
         </motion.div>

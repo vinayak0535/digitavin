@@ -83,7 +83,7 @@ ${project.result}
     href={project.url} 
     target="_blank" 
     rel="noopener noreferrer"
-    className="h-full  w-full block relative group cursor-pointer"
+    className="h-full w-full block relative group cursor-pointer"
   >
     <img
       src={project.id === 1 ? portfolioRealEstate : project.id === 2 ? portfolioGym : portfolioSalon}
@@ -111,7 +111,7 @@ ${project.result}
   }));
 
   return (
-    <section id="portfolio" className="py-6 sm:py-20 md:py-22 bg-background">
+    <section id="portfolio" className="py-6 sm:py-10 md:py-22 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
@@ -142,12 +142,12 @@ ${project.result}
                 >
                   <div className="rounded-2xl border border-border bg-card/50 backdrop-blur-sm overflow-hidden">
                     {/* Project Image */}
-                    <div className="relative h-[40rem] overflow-hidden">
+                    <div className="relative h-full overflow-hidden">
                         <a 
                       href={project.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="relative h-[40rem] overflow-hidden block group object-cover w-full cursor-pointer"
+                      className="relative h-0 overflow-hidden block group object-cover w-full cursor-pointer"
                     ></a>
                       <img
                         src={project.id === 1 ? portfolioRealEstate : project.id === 2 ? portfolioGym : portfolioSalon}
