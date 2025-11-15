@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 250 70% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 250 50% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 250 50% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 238 82% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 250 45% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 250 40% 20%;
+    --muted-foreground: 210 20% 70%;
+
+    --accent: 238 82% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 250 30% 25%;
+    --input: 250 30% 20%;
+    --ring: 238 82% 65%;
+
+    --radius: 0.75rem;
+
+    /* Gradient colors */
+    --gradient-start: 238 82% 65%;
+    --gradient-end: 238 82% 55%;
+    
+    /* Glow effect */
+    --glow: 238 82% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Prevent horizontal scroll on all elements */
+  section,
+  div {
+    max-width: 100%;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--glow) / 0.5);
+  }
+
+  .card-glow {
+    box-shadow: 0 0 30px hsl(var(--glow) / 0.15);
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
