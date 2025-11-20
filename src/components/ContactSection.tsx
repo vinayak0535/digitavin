@@ -156,6 +156,7 @@ const ContactSection = () => {
           >
             {/* Contact Info Cards */}
             <div className="space-y-4">
+              <a href="mailto:digitavin@gmail.com" target="_blank">
               <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-primary/10">
@@ -167,8 +168,10 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
+              </a>
 
-              <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all">
+<a href="tel:9702490987" target="_blank">
+              <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all mt-3">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-primary/10">
                     <Phone className="w-6 h-6 text-primary" />
@@ -179,9 +182,10 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
+              </a>
 
 <a href="https://wa.me/919702490987" target="_blank">
-                 <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all">
+                 <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all mt-3">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-lg bg-primary/10">
                     <MessageCircle className="w-6 h-6 text-primary" />
