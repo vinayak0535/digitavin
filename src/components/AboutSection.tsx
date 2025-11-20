@@ -126,7 +126,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-<a href="#contact">
+<a href="https://wa.me/919702490987?text=I%20am%20interested%20in%20your%20services" target="_blank">
      <Button variant="gradient" size="lg" >
               Let's Work Together
             </Button>
