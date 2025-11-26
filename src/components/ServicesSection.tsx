@@ -89,9 +89,7 @@ const ServicesSection = () => {
                 ))}
               </ul>
 
-              <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                Learn More
-              </Button>
+             
             </motion.div>
           ))}
         </div>
