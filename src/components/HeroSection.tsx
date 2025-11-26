@@ -24,7 +24,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-35"
         >
           <source
             src="https://www.elegantthemes.com/images/divi/divi-hero-video-small.webm"
@@ -40,7 +40,7 @@ const HeroSection = () => {
       >
         <div className="max-w-4xl w-full">
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-primary text-xs sm:text-sm md:text-base font-semibold tracking-wider uppercase mb-3 sm:mb-4 pt-20"
@@ -48,7 +48,7 @@ const HeroSection = () => {
             Website Development
           </motion.p>
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
