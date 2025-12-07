@@ -131,8 +131,7 @@ ${project.result}
             Our <span className="gradient-text">Portfolio</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-            Real projects. Real results. See how we've helped businesses transform their online
-            presence.
+            Demo Projects Showcasing Our Expertise in Building High-Converting Websites for Local Businesses.
           </p>
         </div>
 
